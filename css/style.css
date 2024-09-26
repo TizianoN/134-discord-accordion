@@ -37,6 +37,11 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: aquamarine;
+  padding: 10px;
+}
+
+.accordion-item > .accordion-item-content > * {
+  background-color: lightyellow;
 }
 
 .accordion-item > input[type='checkbox'],
@@ -59,5 +64,4 @@ body {
   background-color: lightgrey;
   border: 2px dashed black;
   padding: 10px;
-  min-height: 50px;
 }
