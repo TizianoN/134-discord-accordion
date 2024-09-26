@@ -21,23 +21,33 @@ body {
 
 /* # SECTION FAQ */
 
-#faq .accordion-item > label {
+#faq {
+  padding: 50px 0;
+}
+
+#faq h2 {
+  margin-bottom: 50px;
+}
+
+/* # ACCORDION */
+
+.accordion-item > label {
   cursor: pointer;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-#faq .accordion-item > input[type='checkbox'],
-#faq .accordion-item > input[type='checkbox'] ~ .accordion-item-content,
-#faq .accordion-item > input[type='checkbox'] ~ label > .accordion-item-open-icon,
-#faq .accordion-item > input[type='checkbox']:checked ~ label > .accordion-item-close-icon {
+.accordion-item > input[type='checkbox'],
+.accordion-item > input[type='checkbox'] ~ .accordion-item-content,
+.accordion-item > input[type='checkbox'] ~ label > .accordion-item-open-icon,
+.accordion-item > input[type='checkbox']:checked ~ label > .accordion-item-close-icon {
   display: none;
 }
 
-#faq .accordion-item > input[type='checkbox']:checked ~ .accordion-item-content,
-#faq .accordion-item > input[type='checkbox']:checked ~ label > .accordion-item-open-icon,
-#faq .accordion-item > input[type='checkbox'] ~ label > .accordion-item-close-icon {
+.accordion-item > input[type='checkbox']:checked ~ .accordion-item-content,
+.accordion-item > input[type='checkbox']:checked ~ label > .accordion-item-open-icon,
+.accordion-item > input[type='checkbox'] ~ label > .accordion-item-close-icon {
   display: block;
 }
 
